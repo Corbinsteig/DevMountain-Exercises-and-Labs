@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Whatever from './Components/Whatever';
 
 export function replaceCamelWithSpaces(colorName) {
   return colorName.replace(/\B([A-Z])\B/g, ' $1');
@@ -12,6 +13,7 @@ function App() {
   
   return (
     <div>
+      <Whatever />
       <button
         style={{backgroundColor: disabled ? 'gray' : buttonColor}}
         onClick={() => setButtonColor(newButtonColor)}
